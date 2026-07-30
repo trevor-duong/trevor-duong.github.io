@@ -1,0 +1,47 @@
+#about {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 960px;
+  @media only screen and (min-width: $cut) {
+    width: 80%;
+  }
+}
+
+.tech {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    min-height: 5rem;
+  }
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  min-height: 140px;
+  @media only screen and (min-width: $cut) {
+    min-height: 170px;
+  }
+}
+
+.user {
+  text-align: center;
+  font-size: 60px;
+  display: grid;
+  grid-template-columns: 1fr;
+  p {
+    font-size: 16px;
+  }
+  @media only screen and (min-width: $cut) {
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 75px;
+  }
+}
+
+.user-details {
+  text-align: center;
+  margin: 5px auto;
+}

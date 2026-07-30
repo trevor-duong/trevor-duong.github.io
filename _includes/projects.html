@@ -1,0 +1,42 @@
+<div class="user-details">
+  <h1> Featured Projects </h1>
+</div>
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="LLM Mathematical Reasoning Capstone" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
+  </div>
+  <div class="contents">
+    <h3> LLM Mathematical Reasoning Capstone </h3>
+    <ul>
+      <li> PyTorch, Hugging Face TRL, GRPO, Kubernetes</li>
+    </ul>
+    <p>Improved a fixed 4B-parameter LLM's (Qwen3-4B) held-out math reasoning accuracy from 0.407 to 0.581, a 43% relative gain, under a no-additional-compute constraint. Ran around 40 version-controlled experiments across SFT, LoRA/QLoRA, and GRPO reinforcement learning, diagnosing and fixing output truncation as the primary failure mode. Trained on UCSD's DSMLP Kubernetes cluster with checkpoint-to-Hub resumption across a 12-hour container ceiling, and used vLLM continuous batching to cut evaluation time from around 93 hours to 2 to 4 hours.</p>
+    <a class="project-link" target="_blank" href="https://github.com/Trevis8688/151B_SP26_Competition">Check it out</a>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-left">
+    <img alt="TDStream distributed video streaming platform" src="{{ "/assets/img/skate.jpg" | prepend: site.baseurl }}" />
+  </div>
+  <div class="contents-right">
+    <h3> TDStream: Distributed Video Streaming Platform </h3>
+    <ul>
+      <li> Go, gRPC, AWS EC2</li>
+    </ul>
+    <p>Full-stack video streaming platform written in Go, with adaptive playback via FFmpeg and RESTful APIs. Distributed storage built on consistent hashing and gRPC, with fault tolerance and horizontal scalability across storage nodes.</p>
+    <a class="project-link" target="_blank" href="https://github.com/Trevis8688/TDStream">Check it out</a>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="Adversarial Prompt Injection Classifier" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
+  </div>
+  <div class="contents">
+    <h3> Adversarial Prompt Injection Classifier </h3>
+    <ul>
+      <li> PyTorch, Hugging Face, PEFT/LoRA</li>
+    </ul>
+    <p>End-to-end NLP classification pipeline that detects adversarial jailbreak attempts against LLMs. Used PEFT fine-tuning of a pretrained DeBERTa transformer to reach a 96% F1-score on a held-out set of zero-day attacks.</p>
+    <a class="project-link" target="_blank" href="https://github.com/Trevis8688/Prompt-Injection-Classifier">Check it out</a>
+  </div>
+</div>
