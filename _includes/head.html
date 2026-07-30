@@ -14,12 +14,14 @@
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
-  <meta property="og:image" content="{{ site.url }}{{ "/assets/img/favicon-512x512.png" | prepend: site.baseurl }}">
+  <meta property="og:image" content="{{ site.url }}{{ "/assets/img/og_banner.png" | prepend: site.baseurl }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <meta name="twitter:image" content="{{ site.url }}{{ "/assets/img/favicon-512x512.png" | prepend: site.baseurl }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ "/assets/img/og_banner.png" | prepend: site.baseurl }}">
 
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
 </head>
