@@ -3,9 +3,22 @@
 </div>
 <div class="user-projects">
   <div class="images-right">
-    <img alt="LLM Mathematical Reasoning Capstone" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
+    <img alt="RAG pipeline: student query and course materials retrieved from a vector store, then passed to an LLM that generates a cited answer" src="{{ "/assets/img/rag_pipeline_diagram.png" | prepend: site.baseurl }}" />
   </div>
   <div class="contents">
+    <h3> RAG-Powered Tutoring Assistant </h3>
+    <ul>
+      <li> FastAPI, pgvector/Chroma, Sentence-Transformers</li>
+    </ul>
+    <p>A retrieval-augmented generation system built on deep learning course materials, designed to answer student questions with citations to real source passages rather than generic LLM output. Beyond core retrieval, the architecture incorporates caching for embeddings and repeated queries, an async ingestion pipeline for document processing, and observability tooling to trace requests from retrieval through generation. Retrieval quality is validated against a hand-built evaluation set.</p>
+    <span class="project-status">Work in Progress</span>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-left">
+    <img alt="GRPO reinforcement learning loop: policy model generates completions, a reward model scores them, and group-relative advantage updates the policy weights" src="{{ "/assets/img/grpo_rl_loop_diagram.png" | prepend: site.baseurl }}" />
+  </div>
+  <div class="contents-right">
     <h3> LLM Mathematical Reasoning Capstone </h3>
     <ul>
       <li> PyTorch, Hugging Face TRL, GRPO, Kubernetes</li>
@@ -15,10 +28,10 @@
   </div>
 </div>
 <div class="user-projects">
-  <div class="images-left">
-    <img alt="TDStream distributed video streaming platform" src="{{ "/assets/img/skate.jpg" | prepend: site.baseurl }}" />
+  <div class="images-right">
+    <img alt="Consistent hashing ring distributing storage keys across nodes" src="{{ "/assets/img/consistent_hashing_diagram.png" | prepend: site.baseurl }}" />
   </div>
-  <div class="contents-right">
+  <div class="contents">
     <h3> TDStream: Distributed Video Streaming Platform </h3>
     <ul>
       <li> Go, gRPC, AWS EC2</li>
@@ -28,10 +41,10 @@
   </div>
 </div>
 <div class="user-projects">
-  <div class="images-right">
-    <img alt="Adversarial Prompt Injection Classifier" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
+  <div class="images-left">
+    <img alt="PEFT/LoRA fine-tuning of a frozen pretrained DeBERTa model, with a classifier head separating safe prompts from jailbreak attempts" src="{{ "/assets/img/peft_finetuning_diagram.png" | prepend: site.baseurl }}" />
   </div>
-  <div class="contents">
+  <div class="contents-right">
     <h3> Adversarial Prompt Injection Classifier </h3>
     <ul>
       <li> PyTorch, Hugging Face, PEFT/LoRA</li>

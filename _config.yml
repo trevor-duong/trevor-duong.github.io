@@ -2,7 +2,7 @@
 title: Trevor Duong | Backend Software Engineer
 description: Portfolio of Trevor Duong, backend software engineer and backend team lead at Sked AI. B.S. Computer Science student at UC San Diego with experience in backend systems, distributed systems, and applied machine learning.
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
-# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+url: "https://trevor-duong.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Trevor Duong
